@@ -1,0 +1,35 @@
+header {
+  .container {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 100px;
+      }
+      ul {
+        font-family: sans-serif;
+        @media (max-width: 767.98px) {
+          display: flex;
+          flex-direction: column;
+        }
+        display: flex;
+        li {
+          margin: 0 10px;
+          list-style: none;
+          .active {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+          }
+          a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            list-style: none;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
