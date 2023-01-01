@@ -28,33 +28,41 @@
   }
 }
 
-header .container .row {
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.527);
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+header .container .rows {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .container .row img {
+header .container .rows img {
   width: 100px;
 }
-header .container .row ul {
+header .container .rows ul {
   font-family: sans-serif;
   display: flex;
 }
 @media (max-width: 767.98px) {
-  header .container .row ul {
+  header .container .rows ul {
     display: flex;
     flex-direction: column;
   }
 }
-header .container .row ul li {
+header .container .rows ul li {
   margin: 0 10px;
   list-style: none;
 }
-header .container .row ul li .active {
+header .container .rows ul li .active {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
-header .container .row ul li a {
+header .container .rows ul li a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   list-style: none;
@@ -113,4 +121,11 @@ header .container .row ul li a {
 }
 .landing .container .row img {
   max-width: 100%;
+}
+
+.sales {
+  height: 100vh;
+}
+.sales .container {
+  padding-top: 100px;
 }/*# sourceMappingURL=main.css.map */
