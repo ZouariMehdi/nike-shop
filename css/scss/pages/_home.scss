@@ -56,9 +56,33 @@
 // end landing page
 // start sales section
 .sales {
+  background-color: rgb(242, 242, 242);
   height: 100vh;
+  @media (max-width: 652px) {
+    height: 200vh;
+  }
+
   .container {
     padding-top: 100px;
+    img {
+      display: inline-block;
+      width: 100%;
+    }
   }
 }
 // end sales section
+// start kids section
+.kids {
+  background-color: $yellow;
+  .container {
+    .row {
+      h2 {
+        font-size: 45px;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+      font-size: 20px;
+    }
+  }
+}
+// end kids section

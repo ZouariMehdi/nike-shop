@@ -1,3 +1,16 @@
+button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 10px;
@@ -124,8 +137,30 @@ header .container .rows ul li a {
 }
 
 .sales {
+  background-color: rgb(242, 242, 242);
   height: 100vh;
+}
+@media (max-width: 652px) {
+  .sales {
+    height: 200vh;
+  }
 }
 .sales .container {
   padding-top: 100px;
+}
+.sales .container img {
+  display: inline-block;
+  width: 100%;
+}
+
+.kids {
+  background-color: #cecf9a;
+}
+.kids .container .row {
+  font-size: 20px;
+}
+.kids .container .row h2 {
+  font-size: 45px;
+  font-weight: bold;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
