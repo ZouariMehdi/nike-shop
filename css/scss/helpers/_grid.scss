@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  padding: 0 10px;
+
   @media (max-width: 575.98px) {
     width: 560px;
   }
@@ -15,5 +15,14 @@
   }
   @media (min-width: 1399.98px) {
     width: 1300px;
+  }
+}
+* {
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.097);
+}
+body {
+  @media (max-width: 575.98px) {
+    overflow-x: hidden;
   }
 }

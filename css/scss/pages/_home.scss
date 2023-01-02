@@ -1,5 +1,8 @@
 // start landing page
 .landing {
+  @media (max-width: 575.98px) {
+    margin-top: 40px;
+  }
   .container .row {
     display: flex;
     flex-direction: row;
@@ -10,6 +13,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
       .col {
         width: 100%;
         text-align: center;
@@ -19,6 +23,10 @@
         p {
           text-align: center;
           margin: 0px auto;
+          @media (max-width: 575.98px) {
+            font-size: 16px;
+            margin: 10px;
+          }
         }
       }
       img {
@@ -68,14 +76,37 @@
       display: inline-block;
       width: 100%;
     }
+    @media (max-width: 575.98px) {
+      padding-bottom: 250px;
+    }
   }
 }
 // end sales section
 // start kids section
 .kids {
+  padding-top: 100px;
+  @media (max-width: 575.98px) {
+    padding-top: 550px;
+    padding-bottom: 150px;
+  }
+  height: 100vh;
   background-color: $yellow;
   .container {
     .row {
+      @media (max-width: 575.98px) {
+        padding-bottom: 250px;
+        flex-direction: column;
+      }
+      img {
+        @media (max-width: 575.98px) {
+          display: none;
+        }
+        @media (max-width: 775.98px) {
+          width: 250px;
+          display: inline-block;
+          margin-left: 100px;
+        }
+      }
       h2 {
         font-size: 45px;
         font-weight: bold;
@@ -86,3 +117,48 @@
   }
 }
 // end kids section
+// start women sectino
+.women {
+  height: 100vh;
+  background-image: url("/images/Rectangle\ 4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .container {
+    .text {
+      width: 50%;
+      margin-left: auto;
+      color: white;
+      @media (max-width: 575.98px) {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      h2 {
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 10px;
+        line-height: 1.8;
+      }
+      button {
+        background-color: #dbd6d6;
+        color: brown;
+        margin-left: 50%;
+        padding: 10px 60px;
+        background: #dbd6d6;
+        box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.336);
+        border-radius: 20px;
+        @media (max-width: 575.98px) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+// end women section

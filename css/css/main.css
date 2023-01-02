@@ -13,7 +13,6 @@ button {
 
 .container {
   margin: 0 auto;
-  padding: 0 10px;
 }
 @media (max-width: 575.98px) {
   .container {
@@ -41,6 +40,17 @@ button {
   }
 }
 
+* {
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.097);
+}
+
+@media (max-width: 575.98px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 header {
   position: sticky;
   top: 0;
@@ -48,6 +58,11 @@ header {
   border-bottom: 1px solid rgba(128, 128, 128, 0.527);
   -webkit-box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 575.98px) {
+  header {
+    position: relative;
+  }
 }
 header .container .rows {
   display: -webkit-box;
@@ -59,6 +74,15 @@ header .container .rows {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 100%;
+}
+@media (max-width: 575.98px) {
+  header .container .rows {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+  }
 }
 header .container .rows img {
   width: 100px;
@@ -84,6 +108,11 @@ header .container .rows ul li {
   margin: 0 10px;
   list-style: none;
 }
+@media (max-width: 575.98px) {
+  header .container .rows ul li {
+    margin-top: 10px;
+  }
+}
 header .container .rows ul li .active {
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -95,6 +124,11 @@ header .container .rows ul li a {
   font-weight: normal;
 }
 
+@media (max-width: 575.98px) {
+  .landing {
+    margin-top: 40px;
+  }
+}
 .landing .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,6 +169,14 @@ header .container .rows ul li a {
     text-align: center;
     margin: 0px auto;
   }
+}
+@media (max-width: 991.98px) and (max-width: 575.98px) {
+  .landing .container .row .col p {
+    font-size: 16px;
+    margin: 10px;
+  }
+}
+@media (max-width: 991.98px) {
   .landing .container .row img {
     width: 60%;
   }
@@ -181,15 +223,95 @@ header .container .rows ul li a {
   display: inline-block;
   width: 100%;
 }
+@media (max-width: 575.98px) {
+  .sales .container {
+    padding-bottom: 250px;
+  }
+}
 
 .kids {
+  padding-top: 100px;
+  height: 100vh;
   background-color: #cecf9a;
+}
+@media (max-width: 575.98px) {
+  .kids {
+    padding-top: 550px;
+    padding-bottom: 150px;
+  }
 }
 .kids .container .row {
   font-size: 20px;
+}
+@media (max-width: 575.98px) {
+  .kids .container .row {
+    padding-bottom: 250px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 575.98px) {
+  .kids .container .row img {
+    display: none;
+  }
+}
+@media (max-width: 775.98px) {
+  .kids .container .row img {
+    width: 250px;
+    display: inline-block;
+    margin-left: 100px;
+  }
 }
 .kids .container .row h2 {
   font-size: 45px;
   font-weight: bold;
   padding-bottom: 20px;
+}
+
+.women {
+  height: 100vh;
+  background-image: url("/images/Rectangle 4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.women .container .text {
+  width: 50%;
+  margin-left: auto;
+  color: white;
+}
+@media (max-width: 575.98px) {
+  .women .container .text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.women .container .text h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.women .container .text p {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10px;
+  line-height: 1.8;
+}
+.women .container .text button {
+  background-color: #dbd6d6;
+  color: brown;
+  margin-left: 50%;
+  padding: 10px 60px;
+  background: #dbd6d6;
+  -webkit-box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.336);
+          box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.336);
+  border-radius: 20px;
+}
+@media (max-width: 575.98px) {
+  .women .container .text button {
+    margin: 0 auto;
+  }
 }

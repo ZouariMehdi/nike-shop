@@ -1,5 +1,8 @@
 header {
   position: sticky;
+  @media (max-width: 575.98px) {
+    position: relative;
+  }
   top: 0;
   background-color: white;
   border-bottom: 1px solid rgba(128, 128, 128, 0.527);
@@ -10,7 +13,11 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      max-width: 100%;
+      @media (max-width: 575.98px) {
+        justify-content: center;
+        max-width: 100%;
+      }
       img {
         width: 100px;
       }
@@ -24,6 +31,9 @@ header {
         li {
           margin: 0 10px;
           list-style: none;
+          @media (max-width: 575.98px) {
+            margin-top: 10px;
+          }
           .active {
             color: rgb(0, 0, 0);
             font-weight: bold;
