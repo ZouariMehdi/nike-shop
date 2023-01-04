@@ -40,11 +40,6 @@ button {
   }
 }
 
-* {
-  border: 1px solid red;
-  background-color: rgba(255, 0, 0, 0.097);
-}
-
 @media (max-width: 575.98px) {
   body {
     overflow-x: hidden;
@@ -130,6 +125,7 @@ header .container .rows ul li a {
   }
 }
 .landing .container .row {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,6 +161,14 @@ header .container .rows ul li a {
   .landing .container .row .col h1 {
     font-size: 30px;
   }
+}
+@media (max-width: 991.98px) and (max-width: 575.98px) {
+  .landing .container .row .col h1 {
+    font-size: 16px;
+    overflow-wrap: break-word;
+  }
+}
+@media (max-width: 991.98px) {
   .landing .container .row .col p {
     text-align: center;
     margin: 0px auto;
@@ -174,6 +178,9 @@ header .container .rows ul li a {
   .landing .container .row .col p {
     font-size: 16px;
     margin: 10px;
+    width: 50%;
+    margin: 0px auto;
+    text-align: left;
   }
 }
 @media (max-width: 991.98px) {
@@ -188,7 +195,6 @@ header .container .rows ul li a {
 .landing .container .row p {
   font-size: 16px;
   line-height: 1.6;
-  width: 80%;
   text-align: left;
 }
 .landing .container .row button {
@@ -208,12 +214,12 @@ header .container .rows ul li a {
 }
 
 .sales {
+  padding: 250px 0px;
   background-color: rgb(242, 242, 242);
-  height: 100vh;
 }
 @media (max-width: 652px) {
   .sales {
-    height: 200vh;
+    padding: 100px 0px;
   }
 }
 .sales .container {
@@ -221,24 +227,25 @@ header .container .rows ul li a {
 }
 .sales .container img {
   display: inline-block;
-  width: 100%;
+  max-width: 100%;
 }
-@media (max-width: 575.98px) {
-  .sales .container {
-    padding-bottom: 250px;
+@media (max-width: 652px) {
+  .sales .container img {
+    width: 80%;
   }
 }
 
 .kids {
-  padding-top: 100px;
-  height: 100vh;
+  padding: 150px 0px;
   background-color: #cecf9a;
 }
 @media (max-width: 575.98px) {
   .kids {
-    padding-top: 550px;
-    padding-bottom: 150px;
+    padding: 50px 0px;
   }
+}
+.kids .container {
+  text-align: left;
 }
 .kids .container .row {
   font-size: 20px;
@@ -253,15 +260,8 @@ header .container .rows ul li a {
   }
 }
 @media (max-width: 575.98px) {
-  .kids .container .row img {
+  .kids .container .row .img-fluid {
     display: none;
-  }
-}
-@media (max-width: 775.98px) {
-  .kids .container .row img {
-    width: 250px;
-    display: inline-block;
-    margin-left: 100px;
   }
 }
 .kids .container .row h2 {
@@ -271,8 +271,8 @@ header .container .rows ul li a {
 }
 
 .women {
-  height: 100vh;
-  background-image: url("/images/Rectangle 4.png");
+  padding: 250px 0px;
+  background-image: url("/nike/images/Rectangle 4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -314,4 +314,10 @@ header .container .rows ul li a {
   .women .container .text button {
     margin: 0 auto;
   }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
